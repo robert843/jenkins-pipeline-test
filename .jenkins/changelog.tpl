@@ -9,7 +9,7 @@ Changelog of Git Changelog.
   {{^hasLink}}
 ## {{name}} {{title}}
   {{/hasLink}}
-  
+## commits:
  {{#commits}}
 ### {{authorName}} - {{commitTime}}
 [{{hash}}](https://server/{{hash}})
