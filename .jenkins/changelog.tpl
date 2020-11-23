@@ -2,12 +2,25 @@
 
 Changelog of Git Changelog.
 {{#issues}}
-  {{#hasLink}}
-## {{name}} [{{issue}}]({{link}}) {{title}}
-  {{/hasLink}}
-  {{^hasLink}}
-## {{name}} {{title}}
-  {{/hasLink}}
+   {{#hasTitle}}
+     {{#hasLink}}
+#### [{{issue}}]({{link}}) {{title}}
+     {{/hasLink}}
+   {{/hasTitle}}
+
+   {{#hasTitle}}
+     {{^hasLink}}
+#### {{title}}
+     {{/hasLink}}
+   {{/hasTitle}}
+
+   {{^hasTitle}}
+    {{^hasIssue}}
+These commits has no issue.
+    {{/hasIssue}}
+   {{/hasTitle}}
+  
+  
 #### [{{issue}}]({{link}}) {{title}} {{name}} || {{description}}
 hasLinkedIssues: {{hasLinkedIssues}}
 isGitHub: {{isGitHub}}
