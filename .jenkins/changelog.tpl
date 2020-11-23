@@ -17,5 +17,5 @@ Changelog of Git Changelog.
 {{{message}}}
 
  {{/commits}}
- {{#isJira}}
+ {{/isJira}}
 {{/issues}}
