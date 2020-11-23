@@ -1,23 +1,19 @@
 # Git Changelog changelog
 
 Changelog of Git Changelog.
-{{#tags}}
-## {{name}}
- {{#issues}}
+{{#issues}}
   {{#hasLink}}
-### {{name}} [{{issue}}]({{link}}) {{title}}
+## {{name}} [{{issue}}]({{link}}) {{title}}
   {{/hasLink}}
   {{^hasLink}}
-### {{name}} {{title}}
+## {{name}} {{title}}
   {{/hasLink}}
-  {{#authors}}
-* {{authorName}}
-   {{#commits}}
-[{{hash}}](https://server/{{hash}}) *{{commitTime}}*
+  
+ {{#commits}}
+### {{authorName}} - {{commitTime}}
+[{{hash}}](https://server/{{hash}})
+
 {{{message}}}
 
-   {{/commits}}
-
-  {{/authors}}
- {{/issues}}
-{{/tags}}
+ {{/commits}}
+{{/issues}}
