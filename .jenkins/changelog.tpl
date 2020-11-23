@@ -2,6 +2,7 @@
 
 Changelog of Git Changelog.
 {{#issues}}
+  {{#isJira}}
   {{#hasLink}}
 ## {{name}} [{{issue}}]({{link}}) {{title}}
   {{/hasLink}}
@@ -16,4 +17,5 @@ Changelog of Git Changelog.
 {{{message}}}
 
  {{/commits}}
+ {{#isJira}}
 {{/issues}}
