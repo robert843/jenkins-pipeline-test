@@ -11,7 +11,7 @@ pipeline {
           def changelogContent = gitChangelog returnType: 'STRING', template: changelogTemplate,
           from: [type: 'REF', value: 'refs/tags/0.0.1'],
           to: [type: 'REF', value: 'master'],
-          custom: [issuePattern: 'JENKINS-([0-9]+)', name: 'test']
+          customIssues: [issuePattern: 'JENKINS-([0-9]+)', name: 'test']
 
           echo changelogContent
       }
