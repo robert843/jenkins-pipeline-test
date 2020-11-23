@@ -9,7 +9,7 @@ Changelog of Git Changelog.
   {{^hasLink}}
 ## {{name}} {{title}}
   {{/hasLink}}
-#### [{{issue}}]({{link}}) {{title}}
+#### [{{issue}}]({{link}}) {{title}} {{name}} || {{description}}
 hasLinkedIssues: {{hasLinkedIssues}}
 isGitHub: {{isGitHub}}
 isGitLab: {{isGitLab}}
