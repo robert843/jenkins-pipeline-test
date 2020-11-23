@@ -4,7 +4,6 @@ pipeline {
     stage('changelog') {
       steps {
         script {
-          sh "git fetch origin --tags master"
           
           def changelogTemplate = readFile(file: '.jenkins/changelog.tpl')
           def changelogContent = ""
