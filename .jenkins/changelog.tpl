@@ -1,4 +1,4 @@
-# Git Changelog changelog
+# Git Changelog changelog1
 
 Changelog of Git Changelog.
 {{#issues}}
