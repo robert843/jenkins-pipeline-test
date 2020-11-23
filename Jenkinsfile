@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     def changelogContext = gitChangelog returnType: 'CONTEXT',
-                            from: [type: 'REF', value: '0.0.1'],
+                            from: [type: 'REF', value: 'refs/tags/0.0.1'],
                             to: [type: 'REF', value: 'master'],
                             jira: [issuePattern: 'JENKINS-([0-9]+)\\b', password: '', server: '', username: '']
 
