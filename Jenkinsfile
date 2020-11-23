@@ -4,6 +4,7 @@ pipeline {
         stage('changelog') {
             steps {
                 script {
+                    sh "git fetch origin --tags master"
                     def changelogContext = gitChangelog returnType: 'CONTEXT',
                             from: [type: 'REF', value: 'refs/tags/0.0.1'],
                             to: [type: 'REF', value: 'master'],
