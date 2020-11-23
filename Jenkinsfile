@@ -10,6 +10,9 @@ pipeline {
           to: [type: 'REF', value: 'master'],
           jira: [issuePattern: 'JENKINS-([0-9]+)\\b', password: '', server: '', username: '']
 
+          echo changelogContext
+          echo changelogContext.issues
+          
           Set<String> issueIdentifiers = new TreeSet<>()
           changelogContext.issues.each { issue ->
           if (issue.name == 'Jira') {
@@ -19,7 +22,6 @@ pipeline {
         currentBuild.description = "http://jira.com/issues/?jql=key%20in%20%28${issueIdentifiers.join(',')}%29"
       }
 
-      echo 'trs'
     }
   }
 
