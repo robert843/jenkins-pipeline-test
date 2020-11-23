@@ -9,6 +9,14 @@ Changelog of Git Changelog.
   {{^hasLink}}
 ## {{name}} {{title}}
   {{/hasLink}}
+  
+hasLinkedIssues: {{hasLinkedIssues}}
+isGitHub: {{isGitHub}}
+isGitLab: {{isGitLab}}
+isJira: {{isJira}}
+isCustom: {{isCustom}}
+isNoIssue: {{isNoIssue}}
+
 ## commits:
  {{#commits}}
 ### {{authorName}} - {{commitTime}}
